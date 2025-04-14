@@ -37,7 +37,7 @@ export default function Header({ translations, locale }) {
                 <div className="flex justify-between h-16 items-center">
                     <div className="flex items-center">
                         <div className="flex-shrink-0">
-                            <Link href={`/${locale}`} className="text-2xl font-bold text-blue-600">
+                            <Link href={`/${locale}`} className="text-2xl font-bold text-green-600">
                                 BankApp
                             </Link>
                         </div>
@@ -77,13 +77,13 @@ export default function Header({ translations, locale }) {
                                 <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-10">
                                     <button
                                         onClick={() => switchLanguage('en')}
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                                        className="block px-4 py-2 text-gray-700 hover:bg-green-50 w-full text-left"
                                     >
                                         English
                                     </button>
                                     <button
                                         onClick={() => switchLanguage('ar')}
-                                        className="block px-4 py-2 text-gray-700 hover:bg-gray-100 w-full text-left"
+                                        className="block px-4 py-2 text-gray-700 hover:bg-green-50 w-full text-left"
                                     >
                                         العربية
                                     </button>
@@ -93,7 +93,7 @@ export default function Header({ translations, locale }) {
 
                         <a
                             href="#download"
-                            className="bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-md shadow-sm"
+                            className="bg-green-600 hover:bg-green-700 text-white px-4 py-2 rounded-md shadow-sm"
                         >
                             {translations.download}
                         </a>
@@ -159,7 +159,7 @@ export default function Header({ translations, locale }) {
                         </Link>
                         <a
                             href="#download"
-                            className="block px-3 py-2 rounded-md text-base font-medium bg-blue-600 text-white hover:bg-blue-700"
+                            className="block px-3 py-2 rounded-md text-base font-medium bg-green-600 text-white hover:bg-green-700"
                             onClick={() => setIsMenuOpen(false)}
                         >
                             {translations.download}

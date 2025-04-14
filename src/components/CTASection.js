@@ -9,15 +9,15 @@ export default function CTASection({ translations }) {
     const isRtl = isRtlLocale(locale)
 
     return (
-        <div id="download" className="bg-blue-50">
+        <div id="download" className="bg-green-50">
             <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl shadow-xl overflow-hidden">
+                <div className="bg-gradient-to-r from-green-600 to-indigo-700 rounded-3xl shadow-xl overflow-hidden">
                     <div className="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:p-16">
                         <div className="lg:w-0 lg:flex-1">
                             <h2 className="text-3xl font-extrabold tracking-tight text-white">
                                 {translations.title}
                             </h2>
-                            <p className="mt-4 max-w-3xl text-lg text-blue-100">
+                            <p className="mt-4 max-w-3xl text-lg text-green-100">
                                 {translations.subtitle}
                             </p>
                         </div>
@@ -26,7 +26,7 @@ export default function CTASection({ translations }) {
                                 <div className="rounded-md shadow">
                                     <a
                                         href="#"
-                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10"
+                                        className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50 md:py-4 md:text-lg md:px-10"
                                     >
                                         {translations.buttonText}
                                     </a>

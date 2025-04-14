@@ -17,20 +17,20 @@ export default async function HomePage({ params }) {
             <Header translations={commonTranslations.header} locale={locale} />
 
             {/* Hero Section */}
-            <div className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white">
+            <div className="bg-gradient-to-r from-green-500 to-indigo-600 text-white">
                 <div className="max-w-7xl mx-auto px-4 py-16 sm:px-6 lg:px-8 lg:py-20">
                     <div className="flex flex-col lg:flex-row items-center justify-between">
                         <div className={`lg:w-1/2 ${direction === 'rtl' ? 'lg:order-last' : ''}`}>
                             <h1 className="text-4xl font-bold tracking-tight sm:text-5xl lg:text-6xl">
                                 {homeTranslations.hero.title}
                             </h1>
-                            <p className="mt-4 text-xl text-blue-100">
+                            <p className="mt-4 text-xl text-green-100">
                                 {homeTranslations.hero.subtitle}
                             </p>
                             <div className={`mt-8 flex flex-wrap gap-4 ${direction === 'rtl' ? 'justify-end sm:justify-start' : 'justify-start'}`}>
                                 <a
                                     href="#download"
-                                    className="bg-white text-blue-600 hover:bg-blue-50 px-6 py-3 rounded-md shadow-sm font-medium flex items-center"
+                                    className="bg-white text-green-600 hover:bg-green-50 px-6 py-3 rounded-md shadow-sm font-medium flex items-center"
                                 >
                                     {homeTranslations.hero.downloadBtn}
                                     {direction === 'rtl' ?
@@ -77,7 +77,7 @@ export default async function HomePage({ params }) {
                             {homeTranslations.features.cards.map((card, index) => {
                                 // Map index to icons
                                 const icons = [
-                                    <CreditCard key="card" className="text-blue-500" />,
+                                    <CreditCard key="card" className="text-green-500" />,
                                     <Smartphone key="phone" className="text-green-500" />,
                                     <Shield key="shield" className="text-purple-500" />,
                                     <Clock key="clock" className="text-orange-500" />
@@ -99,22 +99,22 @@ export default async function HomePage({ params }) {
             </div>
 
             {/* CTA Section */}
-            <div id="download" className="bg-blue-50">
+            <div id="download" className="bg-green-50">
                 <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
-                    <div className="bg-gradient-to-r from-blue-600 to-indigo-700 rounded-3xl shadow-xl overflow-hidden">
+                    <div className="bg-gradient-to-r from-green-600 to-indigo-700 rounded-3xl shadow-xl overflow-hidden">
                         <div className="px-6 py-12 sm:px-12 sm:py-16 lg:flex lg:items-center lg:p-16">
                             <div className="lg:w-0 lg:flex-1">
                                 <h2 className="text-3xl font-extrabold tracking-tight text-white">
                                     {homeTranslations.cta.title}
                                 </h2>
-                                <p className="mt-4 max-w-3xl text-lg text-blue-100">
+                                <p className="mt-4 max-w-3xl text-lg text-green-100">
                                     {homeTranslations.cta.subtitle}
                                 </p>
                             </div>
                             <div className={`mt-8 lg:mt-0 ${direction === 'rtl' ? 'lg:mr-8' : 'lg:ml-8'}`}>
                                 <div className="sm:flex">
                                     <div className="rounded-md shadow">
-                                        <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-blue-600 bg-white hover:bg-blue-50 md:py-4 md:text-lg md:px-10">
+                                        <a href="#" className="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-green-600 bg-white hover:bg-green-50 md:py-4 md:text-lg md:px-10">
                                             {homeTranslations.cta.buttonText}
                                         </a>
                                     </div>

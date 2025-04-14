@@ -23,7 +23,7 @@ export default async function PrivacyPolicyPage({ params }) {
                         <div className="flex items-center mb-6">
                             <Link
                                 href={`/${locale}`}
-                                className={`flex items-center text-blue-600 hover:text-blue-800 ${direction === 'rtl' ? 'ml-4' : 'mr-4'}`}
+                                className={`flex items-center text-green-600 hover:text-green-800 ${direction === 'rtl' ? 'ml-4' : 'mr-4'}`}
                             >
                                 <ArrowLeft size={20} />
                                 <span className="ml-1">{privacyTranslations.backToHome}</span>
