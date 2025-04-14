@@ -1,5 +1,8 @@
-import { createIntl } from 'next-intl'
+/**
+ * Utility functions for handling translations
+ */
 
+// Load translation messages for a specific locale
 export async function loadMessages(locale) {
     return {
         common: (await import(`../../public/locales/${locale}/common.json`)).default,
@@ -9,20 +12,47 @@ export async function loadMessages(locale) {
     }
 }
 
+// Get translations for a specific namespace
 export async function getTranslations(locale, namespace) {
     const messages = await loadMessages(locale)
     return messages[namespace]
 }
 
-export async function createTranslator(locale) {
+// Simple translation function for use in server components
+export async function createServerTranslator(locale) {
     const messages = await loadMessages(locale)
-    const intl = createIntl({ locale, messages })
 
     return {
         t: (key, params = {}) => {
             // Split the key to get namespace and actual key
             const [namespace, actualKey] = key.split(':')
-            return intl.formatMessage({ id: `${namespace}.${actualKey}` }, params)
+
+            if (!messages[namespace]) {
+                console.warn(`Translation namespace not found: ${namespace}`)
+                return key
+            }
+
+            let result = messages[namespace]
+            const keyParts = actualKey.split('.')
+
+            // Traverse the translations object
+            for (const k of keyParts) {
+                if (result && result[k]) {
+                    result = result[k]
+                } else {
+                    console.warn(`Translation key not found: ${key}`)
+                    return key
+                }
+            }
+
+            // If result is a string, interpolate any params
+            if (typeof result === 'string') {
+                return Object.entries(params).reduce((acc, [key, value]) => {
+                    return acc.replace(new RegExp(`{{${key}}}`, 'g'), value)
+                }, result)
+            }
+
+            return key
         }
     }
 }

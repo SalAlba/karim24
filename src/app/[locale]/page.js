@@ -4,7 +4,8 @@ import Footer from '../../components/Footer'
 import { getTranslations, getDirection } from '../../utils/i18n'
 
 export default async function HomePage({ params }) {
-    const locale = params.locale
+    // Make sure params is properly awaited
+    const { locale } = await params
     const direction = getDirection(locale)
 
     // Load translations
