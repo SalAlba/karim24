@@ -49,7 +49,7 @@ export default async function HomePage({ params }) {
                         <div className={`lg:w-1/2 mt-10 lg:mt-0 ${direction === 'rtl' ? 'lg:order-first' : ''}`}>
                             <div className="relative mx-auto w-full max-w-md">
                                 <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
-                                    <img src="/images/app-screenshot.png" alt="App screenshot" className="w-full h-full object-cover" />
+                                    <img src="/images/250x450.svg" alt="App screenshot" className="w-full h-full object-cover" />
                                 </div>
                                 <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-2 shadow-lg">
                                     <Gift size={24} className="text-white" />
@@ -120,8 +120,8 @@ export default async function HomePage({ params }) {
                                     </div>
                                 </div>
                                 <div className="mt-4 flex justify-center space-x-4">
-                                    <img src="/images/app-store.png" alt="App Store" className="h-10" />
                                     <img src="/images/play-store.png" alt="Play Store" className="h-10" />
+                                    <img src="/images/apple-store.png" alt="App Store" className="h-10" />
                                 </div>
                             </div>
                         </div>

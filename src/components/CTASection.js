@@ -35,8 +35,8 @@ export default function CTASection({ translations }) {
                             <div className={`mt-4 flex justify-center ${isRtl ? 'space-x-reverse' : ''} space-x-4`}>
                                 <div className="relative h-10 w-32">
                                     <Image
-                                        src="/images/app-store.png"
-                                        alt="App Store"
+                                        src="/images/play-store.png"
+                                        alt="Play Store"
                                         fill
                                         sizes="128px"
                                         className="object-contain"
@@ -44,8 +44,8 @@ export default function CTASection({ translations }) {
                                 </div>
                                 <div className="relative h-10 w-32">
                                     <Image
-                                        src="/images/play-store.png"
-                                        alt="Play Store"
+                                        src="/images/apple-store.png"
+                                        alt="App Store"
                                         fill
                                         sizes="128px"
                                         className="object-contain"
