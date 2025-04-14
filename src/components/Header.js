@@ -52,12 +52,12 @@ export default function Header({ translations, locale }) {
                             <Link href={`/${locale}#features`} className="text-gray-500 hover:text-gray-900">
                                 {translations.features}
                             </Link>
-                            <Link href={`/${locale}#pricing`} className="text-gray-500 hover:text-gray-900">
+                            {/* <Link href={`/${locale}#pricing`} className="text-gray-500 hover:text-gray-900">
                                 {translations.pricing}
-                            </Link>
-                            <Link href={`/${locale}#about`} className="text-gray-500 hover:text-gray-900">
+                            </Link> */}
+                            {/* <Link href={`/${locale}#about`} className="text-gray-500 hover:text-gray-900">
                                 {translations.about}
-                            </Link>
+                            </Link> */}
                             <Link href={`/${locale}#contact`} className="text-gray-500 hover:text-gray-900">
                                 {translations.contact}
                             </Link>

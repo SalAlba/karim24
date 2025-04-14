@@ -15,9 +15,9 @@ export default function Footer({ translations, locale }) {
                         <h3 className="text-sm font-semibold uppercase tracking-wider">{translations.company}</h3>
                         <ul className="mt-4 space-y-2">
                             <li><a href="#" className="text-gray-300 hover:text-white">{translations.about}</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white">{translations.careers}</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white">{translations.blog}</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white">{translations.contact}</a></li>
+                            {/* <li><a href="#" className="text-gray-300 hover:text-white">{translations.careers}</a></li> */}
+                            {/* <li><a href="#" className="text-gray-300 hover:text-white">{translations.blog}</a></li> */}
+                            {/* <li><a href="#" className="text-gray-300 hover:text-white">{translations.contact}</a></li> */}
                         </ul>
                     </div>
                     <div>
@@ -44,9 +44,9 @@ export default function Footer({ translations, locale }) {
                     <div>
                         <h3 className="text-sm font-semibold uppercase tracking-wider">{translations.support}</h3>
                         <ul className="mt-4 space-y-2">
-                            <li><a href="#" className="text-gray-300 hover:text-white">{translations.help}</a></li>
+                            {/* <li><a href="#" className="text-gray-300 hover:text-white">{translations.help}</a></li> */}
                             <li><a href="#" className="text-gray-300 hover:text-white">{translations.faq}</a></li>
-                            <li><a href="#" className="text-gray-300 hover:text-white">{translations.community}</a></li>
+                            {/* <li><a href="#" className="text-gray-300 hover:text-white">{translations.community}</a></li> */}
                         </ul>
                     </div>
                     <div>
