@@ -19,7 +19,7 @@ function getLocale(request) {
         .map(item => item.split(';')[0].trim())
         .find(item => locales.includes(item))
 
-    return acceptedLocale || 'en' // Default to English
+    return acceptedLocale || 'ar' // Default to Arabic
 }
 
 export function middleware(request) {

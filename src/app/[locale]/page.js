@@ -3,6 +3,15 @@ import Header from '../../components/Header'
 import Footer from '../../components/Footer'
 import { getTranslations, getDirection } from '../../utils/i18n'
 
+import { i18nConfig } from '@/app/i18n-config'
+// This function is required for static site generation with dynamic routes
+export function generateStaticParams() {
+    return i18nConfig.locales.map((locale) => ({
+        locale: locale,
+    }))
+}
+
+
 export default async function HomePage({ params }) {
     // Make sure params is properly awaited
     const { locale } = await params
@@ -50,6 +59,8 @@ export default async function HomePage({ params }) {
                             <div className="relative mx-auto w-full max-w-md">
                                 <div className="bg-white rounded-xl shadow-2xl overflow-hidden">
                                     <img src="/images/250x450.svg" alt="App screenshot" className="w-full h-full object-cover" />
+                                    {/* <img src={`${process.env.NODE_ENV === 'production' ? '/karim24' : ''}/images/250x450.svg`} alt="App screenshot" /> */}
+
                                 </div>
                                 <div className="absolute -top-4 -right-4 bg-yellow-400 rounded-full p-2 shadow-lg">
                                     <Gift size={24} className="text-white" />
@@ -59,6 +70,53 @@ export default async function HomePage({ params }) {
                     </div>
                 </div>
             </div>
+
+
+            {/* Features Section */}
+            {/* About The Application Section */}
+            <div id="about" className="py-16 bg-gray-50">
+                <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+                    <div className="text-center">
+                        <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                            {homeTranslations.about.title}
+                        </h2>
+                        <p className="mt-4 max-w-2xl mx-auto text-xl text-gray-500">
+                            {homeTranslations.about.subtitle}
+                        </p>
+                    </div>
+
+                    <div className="mt-12">
+                        <div className="prose prose-green max-w-none">
+                            <p className="text-gray-600">
+                                {homeTranslations.about.description}
+                            </p>
+
+                            {/* <div className="mt-8 grid gap-8 md:grid-cols-2">
+                                <div className="bg-white p-6 rounded-lg shadow-sm">
+                                    <h3 className="text-lg font-medium text-gray-900 mb-3">
+                                        {homeTranslations.about?.securityTitle || "Bank-Grade Security"}
+                                    </h3>
+                                    <p className="text-gray-600">
+                                        {homeTranslations.about?.securityText ||
+                                            "Your financial security is our top priority. Our app employs advanced encryption, biometric authentication, and real-time fraud monitoring to keep your data and money safe."}
+                                    </p>
+                                </div>
+
+                                <div className="bg-white p-6 rounded-lg shadow-sm">
+                                    <h3 className="text-lg font-medium text-gray-900 mb-3">
+                                        {homeTranslations.about?.supportTitle || "24/7 Customer Support"}
+                                    </h3>
+                                    <p className="text-gray-600">
+                                        {homeTranslations.about?.supportText ||
+                                            "We're always here to help. Our dedicated support team is available around the clock to assist you with any questions or issues you might encounter."}
+                                    </p>
+                                </div>
+                            </div> */}
+                        </div>
+                    </div>
+                </div>
+            </div>
+
 
             {/* Features Section */}
             <div id="features" className="py-12 bg-white">
@@ -122,6 +180,10 @@ export default async function HomePage({ params }) {
                                 <div className="mt-4 flex justify-center space-x-4">
                                     <img src="/images/play-store.png" alt="Play Store" className="h-10" />
                                     <img src="/images/apple-store.png" alt="App Store" className="h-10" />
+
+
+                                    {/* <img src={`${process.env.NODE_ENV === 'production' ? '/karim24' : ''}/images/play-store.png`} alt="Play Store" className="h-10" /> */}
+                                    {/* <img src="src={`${process.env.NODE_ENV === 'production' ? '/karim24' : ''}/images/apple-store.png`}" alt="App Store" className="h-10" /> */}
                                 </div>
                             </div>
                         </div>

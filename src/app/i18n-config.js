@@ -7,7 +7,7 @@ export const i18nConfig = {
     locales: ['en', 'ar'],
 
     // Default locale
-    defaultLocale: 'en',
+    defaultLocale: 'ar',
 
     // Dictionary of locale display names
     localeNames: {

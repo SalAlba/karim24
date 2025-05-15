@@ -4,7 +4,7 @@
     "backToHome": "Back to Home",
     "introduction": {
         "title": "Introduction",
-        "content": "Welcome to BankApp. These Terms and Conditions govern your use of our mobile application and the services provided through it. By using our app, you agree to these Terms and Conditions in full. If you disagree with any part of these terms and conditions, you must not use our application."
+        "content": "Welcome to Karim. These Terms and Conditions govern your use of our mobile application and the services provided through it. By using our app, you agree to these Terms and Conditions in full. If you disagree with any part of these terms and conditions, you must not use our application."
     },
     "definitions": {
         "title": "Definitions",
@@ -12,11 +12,11 @@
         "terms": [
             {
                 "term": "Application",
-                "definition": "Refers to the mobile banking application BankApp, available on iOS and Android platforms."
+                "definition": "Refers to the mobile banking application Karim, available on iOS and Android platforms."
             },
             {
                 "term": "Company",
-                "definition": "Refers to our company, BankApp Inc., registered office at 123 Banking Street, Finance City, FC 12345."
+                "definition": "Refers to our company, Karim Inc., registered office at 123 Banking Street, Finance City, FC 12345."
             },
             {
                 "term": "User",
@@ -43,7 +43,7 @@
     },
     "liability": {
         "title": "Limitation of Liability",
-        "content": "In no event shall BankApp, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Application; (ii) any conduct or content of any third party on the Application; (iii) any content obtained from the Application; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage."
+        "content": "In no event shall Karim, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Application; (ii) any conduct or content of any third party on the Application; (iii) any content obtained from the Application; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage."
     },
     "governing": {
         "title": "Governing Law",

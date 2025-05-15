@@ -4,6 +4,15 @@ import Header from '../../../components/Header'
 import Footer from '../../../components/Footer'
 import { getTranslations, getDirection } from '../../../utils/i18n'
 
+import { i18nConfig } from '@/app/i18n-config'
+// This function is required for static site generation with dynamic routes
+export function generateStaticParams() {
+    return i18nConfig.locales.map((locale) => ({
+        locale: locale,
+    }))
+}
+
+
 export default async function TermsAndConditionsPage({ params }) {
     // const locale = params.locale
     const { locale } = await params

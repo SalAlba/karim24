@@ -54,11 +54,11 @@ export default function Footer({ translations, locale }) {
                         <ul className="mt-4 space-y-2">
                             <li className="flex items-center">
                                 <Phone size={16} className={`${direction === 'rtl' ? 'ml-2' : 'mr-2'}`} />
-                                <span>+1 (555) 123-4567</span>
+                                <span>+44-7450-446551</span>
                             </li>
                             <li className="flex items-center">
                                 <Mail size={16} className={`${direction === 'rtl' ? 'ml-2' : 'mr-2'}`} />
-                                <span>support@bankapp.com</span>
+                                <span>support@karim24.com</span>
                             </li>
                         </ul>
                         <div className="mt-6 flex space-x-6">

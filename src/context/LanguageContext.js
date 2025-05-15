@@ -8,7 +8,7 @@ const LanguageContext = createContext()
 export function LanguageProvider({ children }) {
     const params = useParams()
     const router = useRouter()
-    const [locale, setLocale] = useState(params?.locale || 'en')
+    const [locale, setLocale] = useState(params?.locale || 'ar')
 
     const changeLanguage = (newLocale) => {
         if (newLocale === locale) return
