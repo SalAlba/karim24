@@ -1,0 +1,52 @@
+{
+    "title": "Terms & Conditions",
+    "lastUpdated": "Last Updated: April 10, 2025",
+    "backToHome": "Back to Home",
+    "introduction": {
+        "title": "Introduction",
+        "content": "Welcome to Karim. These Terms and Conditions govern your use of our mobile application and the services provided through it. By using our app, you agree to these Terms and Conditions in full. If you disagree with any part of these terms and conditions, you must not use our application."
+    },
+    "definitions": {
+        "title": "Definitions",
+        "content": "The following terminology applies to these Terms and Conditions, Privacy Statement and Disclaimer Notice and any or all Agreements:",
+        "terms": [
+            {
+                "term": "Application",
+                "definition": "Refers to the mobile banking application Karim, available on iOS and Android platforms."
+            },
+            {
+                "term": "Company",
+                "definition": "Refers to our company, Karim Inc., registered office at 123 Banking Street, Finance City, FC 12345."
+            },
+            {
+                "term": "User",
+                "definition": "Refers to any person who downloads, registers, or uses the Application."
+            },
+            {
+                "term": "Services",
+                "definition": "Refers to the financial and banking services offered through the Application, including but not limited to money transfers, payments, and account management."
+            }
+        ]
+    },
+    "accountService": {
+        "title": "Account and Service Terms",
+        "content": "By creating an account on our Application, you agree to the following terms:",
+        "items": [
+            "You must be at least 18 years old to create an account and use our Services.",
+            "You must provide accurate, current, and complete information during the registration process.",
+            "You are responsible for maintaining the confidentiality of your account credentials.",
+            "You are responsible for all activities that occur under your account.",
+            "You agree to promptly notify us of any unauthorized use of your account or any other breach of security.",
+            "We reserve the right to suspend or terminate your account if any information provided during registration proves to be inaccurate, not current, or incomplete.",
+            "We reserve the right to refuse service to anyone for any reason at any time."
+        ]
+    },
+    "liability": {
+        "title": "Limitation of Liability",
+        "content": "In no event shall Karim, its directors, employees, partners, agents, suppliers, or affiliates, be liable for any indirect, incidental, special, consequential or punitive damages, including without limitation, loss of profits, data, use, goodwill, or other intangible losses, resulting from (i) your access to or use of or inability to access or use the Application; (ii) any conduct or content of any third party on the Application; (iii) any content obtained from the Application; and (iv) unauthorized access, use or alteration of your transmissions or content, whether based on warranty, contract, tort (including negligence) or any other legal theory, whether or not we have been informed of the possibility of such damage."
+    },
+    "governing": {
+        "title": "Governing Law",
+        "content": "These Terms shall be governed and construed in accordance with the laws of [Your Country], without regard to its conflict of law provisions. Our failure to enforce any right or provision of these Terms will not be considered a waiver of those rights."
+    }
+}
