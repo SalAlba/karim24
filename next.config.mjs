@@ -7,6 +7,7 @@ const nextConfig = {
     images: {
         unoptimized: true,
     },
+    distDir: 'public_page',
 
     // i18n: {
     //     // These are the locales you want to support
